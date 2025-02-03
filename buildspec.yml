@@ -1,14 +1,4 @@
 version: 0.2
-
-phases:
-  install:
-    commands:
-      - echo Installing dependencies...
-      - apt-get update && apt-get install -y zip
-  build:
-    commands:
-      - echo Building application...
-      - echo "Sample application built!" > output.txt
-  post_build:
-    commands:
-      - echo Build complete!
+build:
+  commands:
+    - echo "Hello, world!"
